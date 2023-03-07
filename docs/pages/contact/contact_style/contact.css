@@ -1,0 +1,266 @@
+body{
+    /*background-image: url("../img/office-865091_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    */
+    margin: 0;
+    padding: 0;
+}
+main{
+    min-height: 100vh;
+    position: relative;
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #162837;
+    opacity: 0.5;
+}
+/*Encabezado*/
+
+.encabezado {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 15px 10%;
+    padding-bottom: 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.encabezado .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.encabezado .logo img{
+    height: 80px;
+    width: 200px;
+    transition: all 0.4s;;
+}
+
+.encabezado .logo img:hover{
+    transform: scale(1.2);
+}
+
+.encabezado nav .links{
+    list-style: none;
+}
+
+.encabezado nav .links li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.5s;
+    font-family: 'Arimo', sans-serif;
+}
+.encabezado nav .links li:hover{
+    transform: scale(1.1);
+}
+
+.encabezado nav .links li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #43bdff;
+}
+.encabezado nav .links li a:hover{
+    color: #f5f5f5;
+}
+
+/*Contenido Principal*/
+.container{
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.container #miH1 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    text-align:start;
+    padding: 50px 50px 10px 50px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    color: #43bdff;
+}
+
+
+.container .table-content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   
+}
+table{
+    color: #fdfdfd;
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif;
+    table-layout: fixed;
+    border-collapse:collapse;
+    backdrop-filter: blur(3px);
+    background-color: rgba(24, 34, 52, 0.975);
+    border-radius: 10px;
+}
+thead{
+    background-color: #43bdff;
+}
+th{
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+td{
+    padding: 15px;
+    border-bottom: solid 1px #43bdff;
+}
+tbody tr:hover{
+    background: #19426b;
+}
+tbody tr{
+    cursor: pointer;
+}
+
+/*footer*/
+
+.end{
+    background-color: #43bdff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 250px;
+    position: relative;
+    z-index: 2;
+}
+
+.end .contacto .endImage{
+    margin: 40px;
+    width: 200px;
+    border-radius: 100px;
+    align-items: flex-start;
+    justify-items: center;
+    
+}
+
+ul {
+    list-style-type: none;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+  
+li {
+    float: left;
+    margin-right: 10px;
+    padding: 0 4px;
+}
+
+.end ul .linkedin{
+    width: 50px;
+    height: 50px;
+}
+
+.end ul .gitHub{
+    width: 55px;
+    height: 55px;
+}
+
+.end ul .whatsapp{
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 1000px){
+    .encabezado{
+        position: relative;
+    }
+    .encabezado .logo img{
+        height: 50px;
+        width: auto;
+    }
+    .encabezado nav .links li a{
+        font-size: 16px;
+    }
+
+    .container #miH1{
+        font-size: 50px;
+        font-weight: 700;
+        text-align:start;
+        padding: 30px 50px 10px 50px;
+        margin-bottom: 100px;
+    }
+
+}
+
+@media (max-width: 600px){
+    .encabezado{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 15px 10%;
+    padding-bottom: 0px;
+    }
+    .encabezado .logo{
+        align-self: center;
+        margin: 0%;
+    }
+    .container .table-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        
+     }
+     table{
+         font-size: 10px;
+     }
+     .end .contacto .endImage{
+    margin: 20px;
+    width: 100px; 
+}
+
+ul {
+    height: 30px;
+}
+  
+li {
+    margin-right: 5px;
+    padding: 0 4px;
+}
+
+.end ul .linkedin{
+    width: 30px;
+    height: 30px;
+}
+
+.end ul .gitHub{
+    width: 30px;
+    height: 30px;
+}
+
+.end ul .whatsapp{
+    width: 30px;
+    height: 30px;
+}
+
+}
+@media (max-width: 500px){
+    table{
+        font-size: 7px;
+    }
+}
